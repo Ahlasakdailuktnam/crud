@@ -60,7 +60,7 @@
             <td>
               <form action="delete2.php" method="post" class="d-inline">
                 <input type="hidden" name="id" value="<?= $row['id'] ?>">
-                <button class="btn btn-danger btn-sm">Delete</button>
+                <button onclick="return confirm('Are you sure you want to delete this product?')" class="btn btn-danger btn-sm">Delete</button>
               </form>
 
               <button class="btn btn-outline-warning btn-sm edit" data-bs-toggle="modal" data-bs-target="#exampleModal">
