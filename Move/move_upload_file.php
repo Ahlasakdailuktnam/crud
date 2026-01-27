@@ -9,10 +9,11 @@
 </head>
 <body>
     <div class="container w-50 mt-3 p-5 shadow rounded-3">
-        <form action="">
+        <form action="move.php" method="post" enctype="multipart/form-data">
             <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" id="image" width="200px" height="200px" alt="" class=" rounded-circle">
-            <input id="file" type="file" class="form-control ">
-        </form>
+            <input name="file" id="file" type="file" class="form-control "> <br>
+            <button name="btnSubmit" class="btn btn-primary">Submit</button>
+        </form> 
     </div>
 </body>
 <script>
@@ -29,5 +30,5 @@
             }
         })
     })
-</script>
+</script> 
 </html>
